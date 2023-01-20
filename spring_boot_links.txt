@@ -1,0 +1,4 @@
+https://www.baeldung.com/spring-boot
+https://www.baeldung.com/spring-validate-requestparam-pathvariable
+https://spring.io/guides/tutorials/rest/
+https://habr.com/ru/post/435144/

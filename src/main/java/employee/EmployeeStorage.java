@@ -1,16 +1,18 @@
-package employee.model;
+package employee;
+
+import employee.model.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class EmployeeRepository {
+public class EmployeeStorage {
 
     private int idCounter;
     private final Map<Integer, Employee> employees = new TreeMap<>();
 
-    public EmployeeRepository() {
+    public EmployeeStorage() {
         this.idCounter = 0;
     }
 
@@ -30,6 +32,20 @@ public class EmployeeRepository {
             return employees.get(id);
         }
         return null;
+    }
+
+    public boolean deleteEmployee(int id) {
+        return employees.remove(id) != null;
+    }
+
+    public int editEmployee(Employee employee) {
+        int id = employee.getId();
+        if (employees.containsKey(id)) {
+            employees.get(id).setName(employee.getName());
+            employees.get(id).setRole(employee.getRole());
+            return id;
+        }
+        return -1;
     }
 
     @Override
