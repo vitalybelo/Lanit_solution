@@ -4,17 +4,9 @@ import lombok.Getter;
 @Getter
 public class Employee {
 
-    private int id;
+    private int id = 0;
     private String name = "";
     private String role = "";
-
-    public Employee() {
-        this(0,"","");
-    }
-
-    public Employee(String name, String role) {
-        this(0, name, role);
-    }
 
     public Employee(int id, String name, String role) {
         this.id = id;
@@ -28,10 +20,6 @@ public class Employee {
 
     public void setRole(String role) {
         this.role = role;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
 }
