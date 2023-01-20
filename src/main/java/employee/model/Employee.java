@@ -4,30 +4,34 @@ import lombok.Getter;
 @Getter
 public class Employee {
 
+    private int id;
     private String name = "";
     private String role = "";
 
     public Employee() {
-        this("","");
+        this(0,"","");
     }
 
     public Employee(String name, String role) {
-        setName(name);
-        setRole(role);
+        this(0, name, role);
+    }
+
+    public Employee(int id, String name, String role) {
+        this.id = id;
+        this.name = name;
+        this.role = role;
     }
 
     public void setName(String name) {
-        if (name.isEmpty()) {
-            name = "Unknown";
-        }
         this.name = name;
     }
 
     public void setRole(String role) {
-        if (role.isEmpty()) {
-            role = "Unknown";
-        }
         this.role = role;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
 }
