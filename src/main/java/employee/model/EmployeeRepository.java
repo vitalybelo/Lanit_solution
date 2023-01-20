@@ -8,7 +8,7 @@ public class EmployeeRepository {
     private int idCounter;
     private final Map<Integer, Employee> employees = new TreeMap<>();
 
-    public EmployeeRepository(int id) {
+    public EmployeeRepository() {
         this.idCounter = 1;
     }
 
