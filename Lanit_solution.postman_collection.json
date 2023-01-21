@@ -7,6 +7,25 @@
 	},
 	"item": [
 		{
+			"name": "ROOT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "POST empty data",
 			"request": {
 				"method": "POST",
@@ -37,7 +56,7 @@
 			"response": []
 		},
 		{
-			"name": "POST Петр Петров",
+			"name": "POST Петр Петрович",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -67,7 +86,7 @@
 			"response": []
 		},
 		{
-			"name": "POST Иван Иванов",
+			"name": "POST Иван Иванович",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -127,6 +146,46 @@
 			"response": []
 		},
 		{
+			"name": "GET object list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET object",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "PUT object",
 			"request": {
 				"method": "PUT",
@@ -161,7 +220,7 @@
 			"response": []
 		},
 		{
-			"name": "GET list",
+			"name": "GET object list",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -181,46 +240,7 @@
 			"response": []
 		},
 		{
-			"name": "GET id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/employee/3",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"employee",
-						"3"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ROOT",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "DELETE id",
+			"name": "DELETE object",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -234,6 +254,26 @@
 					"path": [
 						"employee",
 						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET object list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						""
 					]
 				}
 			},
