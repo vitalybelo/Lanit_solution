@@ -61,7 +61,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employee/?name=Петр&role=Петров",
+					"raw": "http://localhost:8080/employee/?name=Петр%20Петрович%20Петров&role=инженер%20участка",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -74,11 +74,11 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Петр"
+							"value": "Петр%20Петрович%20Петров"
 						},
 						{
 							"key": "role",
-							"value": "Петров"
+							"value": "инженер%20участка"
 						}
 					]
 				}
@@ -91,7 +91,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employee/?name=Иван&role=Иванов",
+					"raw": "http://localhost:8080/employee/?name=Иван%20Иванович%20Иванов&role=механик",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -104,11 +104,11 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Иван"
+							"value": "Иван%20Иванович%20Иванов"
 						},
 						{
 							"key": "role",
-							"value": "Иванов"
+							"value": "механик"
 						}
 					]
 				}
@@ -121,7 +121,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employee/?name=Семен&role=Семенович",
+					"raw": "http://localhost:8080/employee/?name=Семен%20Семенович%20Горбунков&role=слесарь%204-го%20разряда",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -134,11 +134,11 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Семен"
+							"value": "Семен%20Семенович%20Горбунков"
 						},
 						{
 							"key": "role",
-							"value": "Семенович"
+							"value": "слесарь%204-го%20разряда"
 						}
 					]
 				}
@@ -191,7 +191,7 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employee/?id=3&name=Сергей&role=Сергеевич",
+					"raw": "http://localhost:8080/employee/?id=3&name=Семен%20Семенович%20Горбунков&role=слесарь%206-го%20разряда",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -208,11 +208,11 @@
 						},
 						{
 							"key": "name",
-							"value": "Сергей"
+							"value": "Семен%20Семенович%20Горбунков"
 						},
 						{
 							"key": "role",
-							"value": "Сергеевич"
+							"value": "слесарь%206-го%20разряда"
 						}
 					]
 				}
@@ -245,7 +245,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/employee/3",
+					"raw": "http://localhost:8080/employee/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -253,7 +253,7 @@
 					"port": "8080",
 					"path": [
 						"employee",
-						"3"
+						"2"
 					]
 				}
 			},
