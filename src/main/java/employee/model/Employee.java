@@ -4,9 +4,9 @@ import lombok.Getter;
 @Getter
 public class Employee {
 
-    private int id;
-    private String name = "";
-    private String role = "";
+    private int id;             // id сотрудника
+    private String name = "";   // имя сотрудника
+    private String role = "";   // должность сотрудника
 
     public Employee() {
         this(0,"","");
