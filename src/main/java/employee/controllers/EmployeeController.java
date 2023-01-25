@@ -1,7 +1,7 @@
 package employee.controllers;
 
 import employee.model.Employee;
-import employee.EmployeeStorage;
+import employee.model.EmployeeStorage;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
