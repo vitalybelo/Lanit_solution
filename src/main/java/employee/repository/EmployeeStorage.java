@@ -1,6 +1,7 @@
-package employee.model;
+package employee.repository;
 
 import employee.model.Employee;
+
 import java.util.*;
 
 /**
@@ -22,11 +23,11 @@ public class EmployeeStorage {
         this.idCounter = 0;
     }
 
-    public int add(String name, String role) {
+    public Employee add(String name, String role) {
         idCounter++;
         Employee employee = new Employee(idCounter, name, role);
         employees.put(idCounter, employee);
-        return idCounter;
+        return employee;
     }
 
     public List<Employee> findAll() {
@@ -34,24 +35,25 @@ public class EmployeeStorage {
     }
 
     public Employee find(int id) {
+        Employee employee = null;
         if (employees.containsKey(id)) {
-            return employees.get(id);
+            employee = employees.get(id);
         }
-        return null;
+        return employee;
     }
 
     public boolean delete(int id) {
         return employees.remove(id) != null;
     }
 
-    public int edit(Employee employee) {
+    public Employee edit(Employee employee) {
         int id = employee.getId();
         if (employees.containsKey(id)) {
             employees.get(id).setName(employee.getName());
             employees.get(id).setRole(employee.getRole());
-            return id;
+            return employees.get(id);
         }
-        return -1;
+        return null;
     }
 
     @Override
